@@ -44,4 +44,4 @@ WHEN NOT MATCHED BY TARGET        -- None of the condition in join is satified b
 	THEN INSERT (firstName, flightCode, flightDate, seat)
 	VALUES (firstName, flightCode, flightDate, seat)
 WHEN NOT MATCHED BY SOURCE          -- None of the condition in join is satified by the source, so Delete operation will be performed
-	THEN DELETE;
+	THEN DELETE;    -- This statement must be terminated by semi-colon
